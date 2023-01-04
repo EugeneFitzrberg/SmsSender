@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">SMS_WATCHER</string>
-    <string name="sms_label">LAST_SMS</string>
-    <string name="none">None</string>
-    <string name="speech_toogle_on">startspeek</string>
-    <string name="speech_toogle_off">stopspeek</string>
-    <string name="start_speaking">Okay! I will read your messages out loud for you now.</string>
-    <string name="stop_speaking">Okay! I will stay silent now.</string>
-</resources>
