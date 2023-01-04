@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/closeMessDetailBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smsTextMess"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <TextView
+        android:id="@+id/abonent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="180dp"
+        android:background="@drawable/rounded_corner"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="*Sender name* (*number*)"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:circularflow_defaultRadius="2dp"
+        app:circularflow_radiusInDP="25pd"
+        app:layout_constraintCircleRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/smsTextMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="173dp"
+        android:background="@drawable/rounded_corner"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="adasdadsadssdsadasd"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:circularflow_defaultRadius="2dp"
+        app:circularflow_radiusInDP="25pd"
+        app:layout_constraintCircleRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abonent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

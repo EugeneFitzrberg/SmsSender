@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FF21"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:divider="#1E30C2"
+        android:dividerHeight="1dip"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/sms_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="180dp"
+        android:background="@drawable/rounded_corner"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="Hello, I'am your personal sms speaker."
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:circularflow_defaultRadius="2dp"
+        app:circularflow_radiusInDP="25pd"
+        app:layout_constraintCircleRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="180dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:text="Your last message will be shown here"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sms_sender" />
+
+    <!--        app:layout_constraintBottom_toTopOf="@+id/_dynamic"--><![CDATA[
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    ]]>
+
+    <ToggleButton
+        android:id="@+id/speechToggle"
+        android:layout_width="138dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/toggle_selector"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textColor="@drawable/toggle_text_color"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sms_text" />
+
+    <ListView
+        android:id="@+id/listSMS"
+        android:layout_width="391dp"
+        android:layout_height="313dp"
+        android:background="@drawable/list_view_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:divider="#1E30C2"
+        android:dividerHeight="1dip"
+
+        app:layout_constraintTop_toBottomOf="@+id/speechToggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
